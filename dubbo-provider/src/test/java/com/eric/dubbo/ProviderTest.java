@@ -16,13 +16,5 @@ public class ProviderTest {
         dubboProvider.export();
 
 
-        HelloWorldService1 helloWorldService1 = new HelloWorldServiceImpl1();
-
-        DubboProvider dubboProvider1 = new DubboProvider();
-        dubboProvider1.setPort(3347);
-        dubboProvider1.setRef(helloWorldService1);
-        dubboProvider1.setInterfaceClass(HelloWorldService1.class);
-
-        dubboProvider1.export();
     }
 }
